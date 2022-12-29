@@ -17,6 +17,11 @@ class Student:
             print("Час відпочивати")
             self.gladness+=5
             self.progress-=0.1
+
+        def money(self):
+            print("")
+            self.gladness += 5
+            self.progress -= 0.1
         def is_alive(self):
             if self.progress<-0.5:
                 print("Відрахування...")

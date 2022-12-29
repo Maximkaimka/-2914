@@ -181,6 +181,15 @@ class Job:
         "C++ developer":{"salary":45, "gladness":25}
         "Rust developer":{"salary":70, "gladness":1}}
 
+class School:
+    def __init__(self, lesson_list):
+        self.lesson=random.choice(list(lesson_list))
+        self.Points=lesson_list(self.lesson)("Points")
+        self.gladness_less=lesson_list(self.lesson)("gladness_less")
+    lesson_list={
+        "Math": {"Points": 10, "gladness": 12}
+        "English": {"Points": 15, "gladness": 9}
+        "Physical training": {"Points": 9, "gladness": 20}}
 
 
 nick=Human(name="Nick")
